@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.container::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    padding: 20px;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    z-index: 99;
+}
+
+form {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 13px;
+    text-align: center;
+}
+
+form h1 {
+    color: white;
+    font-size: 2.5em;
+    text-align: left;
+}
+
+input {
+    line-height: 1.5;
+    font-size: 1em;
+    padding: 0.8rem 0.8rem 0.7rem;
+    color: white;
+    border-radius: 5px;
+    background-color: rgba(18, 12, 12, 0.444);
+}
+
+button {
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+form a {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.txt1 {
+    text-align: left;
+    color: rgb(133, 122, 122);
+    padding: 7px 0px;
+}
+
+.txt2 {
+    text-align: left;
+    color: rgb(133, 122, 122);
+    font-size: small;
+    padding: 7px 0px;
+}
+
+.txt2 a {
+    color: blue;
+}
+
+footer {
+    color: gray;
+    padding: 20vh 30vh;
+}
+
+.link {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.link a {
+    color: gray;
+    text-decoration: underline;
+    padding: 10px 0px;
+}
+
+select {
+    background-color: rgba(109, 90, 90, 0.208);
+    color: white;
+    padding: 10px 25px;
+    margin: 20px 0px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    form {
+        padding: 15px 20px;
+    }
+
+    .link {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        padding: 10vh 10vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    form {
+        padding: 10px 15px;
+    }
+
+    .link {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 5vh 5vh;
+    }
+}
