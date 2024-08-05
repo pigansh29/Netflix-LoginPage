@@ -5,12 +5,10 @@
     text-decoration: none;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
-
 body {
     overflow-x: hidden;
     background-color: black;
 }
-
 .container::before {
     position: absolute;
     top: 0;
@@ -119,8 +117,6 @@ select {
     padding: 10px 25px;
     margin: 20px 0px;
 }
-
-/* Media Queries */
 
 @media (max-width: 768px) {
     .content {
